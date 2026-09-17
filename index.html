@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript test</h1>
+
+    <p>KeyCode: </p>
+    <script>
+        let Headline = document.querySelector("h1")
+
+        Headline.addEventListener("mouseover", function() {
+            Headline.textContent = "Dont push my buttons"
+        })
+
+        let Body = document.querySelector("body")
+        Body.addEventListener("keydown", Makesure)
+        Body.addEventListener("keydown", KeyCode)
+
+        let Clicked = document.querySelector("p")
+
+        function Makesure(e) {
+            if (e.keyCode == 82) {
+                Body.style.backgroundColor = "red"
+            }
+            else if (e.keyCode == 71) {
+                Body.style.backgroundColor = "lime"
+            }
+            else if (e.keyCode == 66) {
+                Body.style.backgroundColor = "blue"
+            }
+        }
+
+        function KeyCode(e) {
+            Clicked.innerHTML = "keyCode: " + e.keyCode
+        }
+        
+        function SiHei(navn) {
+            console.log("Hei", navn)
+        }
+
+        SiHei("Alice")
+
+        //let navn = prompt("hei hva heter du?")
+        //alert(navn)
+        //console.log(navn)
+
+        let tall = 14;
+        const pi = 3.14;
+        tall = 10;
+        tall1 = "5"
+        console.log(tall + Number(tall1))
+    </script>
+</body>
+<main></main>
+</html>
