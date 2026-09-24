@@ -1,18 +1,3 @@
-let elev = {
-    navn: "Alice",
-    alder: 17,
-    poeng: 89,
-    klasse: "2ImI"
-}
-
-elev.poeng = 85
-
-console.log(elev.navn)
-console.log(elev.alder)
-console.log(elev.poeng)
-console.log(elev.klasse)
-console.log(elev)
-
 let produkt = {
     navn: "Tastatur",
     pris: 599,
@@ -48,3 +33,23 @@ function visProdukt(produkt2){
 }
 
 visProdukt(produkt2);
+
+let elev = ["Alice", "Zoe", "Max", "Maya", "Ashly"]
+
+let poeng = [76, 91, 42, 59, 60]
+
+let elever = [
+    {navn: "Alice", poeng: 76},
+    {navn: "Zoe", poeng: 91},
+    {navn: "Max", poeng: 42},
+    {navn: "Maya", poeng: 59},
+    {navn: "Max", poeng: 60}
+]
+
+for(let elev of elever){
+    if (elev.poeng < 60){
+        console.log(elev.navn + " fikk " + elev.poeng + " poeng - Ikke bestått");
+    } else {
+        console.log(elev.navn + " fikk " + elev.poeng + " poeng - Bestått");
+    }
+}
