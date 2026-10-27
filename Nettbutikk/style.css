@@ -13,12 +13,21 @@ header{
     border-color: #000000;
 }
 
+.logo{
+    height: 5vh;
+    width: 5vh;
+    justify-self: center;
+    align-self: center;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
 p{
     display: flex;
     font-family: 'Franklin Gothic Medium';
     color: #ffffff;
     text-decoration: none;
-    flex-direction: column;
+    flex-direction: row;
     margin: 3vh 3vh;
 }
 
@@ -31,8 +40,41 @@ p{
     margin: 3vh 3vh;
 }
 
-.kurv{
+.ting{
     display: flex;
     align-self: auto;
-    justify-content: left;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 10vh;
+    margin-top: 10vh;
+    
+}
+
+
+img {
+    height: 22vh;
+    width: 22vh;
+}
+
+.bilde {
+    /*bilde til arbeidet*/
+    display: flex;
+    background-color: #22053b;
+    align-items: center;
+    justify-content: center;
+    height: 26vh;
+    width: 26vh;
+    /*Border*/
+    border-style: solid;
+    border-width: 5px;
+    
+    border-color: #000000;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    
 }
