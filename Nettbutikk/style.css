@@ -78,3 +78,8 @@ h1{
     text-decoration: underline;
     
 }
+
+.random{
+    display: flex;
+    justify-content: center;
+}
