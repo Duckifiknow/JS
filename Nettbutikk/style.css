@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-header{
+header {
     display: flex;
     background-color: #22053b;
     color: #ffffff;
@@ -13,7 +13,7 @@ header{
     border-color: #000000;
 }
 
-.logo{
+.logo {
     height: 5vh;
     width: 5vh;
     justify-self: center;
@@ -22,7 +22,7 @@ header{
     margin-right: 3vh;
 }
 
-p{
+p {
     display: flex;
     font-family: 'Franklin Gothic Medium';
     color: #ffffff;
@@ -31,7 +31,7 @@ p{
     margin: 3vh 3vh;
 }
 
-.nav{
+.nav {
     display: flex;
     font-family: 'Franklin Gothic Medium';
     color: #ffffff;
@@ -40,14 +40,14 @@ p{
     margin: 3vh 3vh;
 }
 
-.ting{
+.ting {
     display: flex;
     align-self: auto;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     gap: 10vh;
     margin-top: 10vh;
-    
+
 }
 
 
@@ -67,19 +67,50 @@ img {
     /*Border*/
     border-style: solid;
     border-width: 5px;
-    
+
     border-color: #000000;
 }
 
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
     text-decoration: underline;
-    
+
 }
 
-.random{
+.random {
     display: flex;
     justify-content: center;
+}
+
+#ting {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35vh, 35vh));
+    align-self: center;
+    justify-content: center;
+    gap: 10vh;
+    margin: 5vh;
+}
+
+.produktkort {
+    display: flex;
+    background-color: #22053b;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000000;
+}
+
+.produktkort img {
+    height: 22vh;
+    width: 22vh;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000000;
+    margin-top: 3vh;
 }
