@@ -114,3 +114,14 @@ h1 {
     border-color: #000000;
     margin-top: 3vh;
 }
+
+.produktknapp {
+    padding: 1px 2px;
+    /* border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid; */
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    border-color: #000000;
+}
