@@ -16,12 +16,26 @@ for (let produkt of produkter) {
 
 const knapper = document.querySelectorAll(".produktknapp");
 knapper.forEach(knapp => {
-    knapp.addEventListener("click",()=>{
-        console.log("Knappen ble trykket");
-    });
+    knapp.addEventListener("click", () => {
+        let id = Number(knapp.dataset.id);
+        let valgtProdukt = produkter.find(
+            produkt => produkt.id === id
+        )
+
+        function oppdaterAntall() {
+            document.getElementById("antallKurv").textContent =
+                handlekurv.length
+        }
+
+        handlekurv.push(valgtProdukt)
+
+        oppdaterAntall()
+        
+        console.log("Produkt-id:", id)
+        console.log(valgtProdukt.navn)
+    })
+
 
 })
 
-let id = Number(knapp.dataset.id);
-console.log("Produkt.id:", id);
-knapp.addEventListener
+
