@@ -29,13 +29,45 @@ knapper.forEach(knapp => {
 
         handlekurv.push(valgtProdukt)
 
+
         oppdaterAntall()
         
+        function visHandlekurv() {
+            const liste = document.getElementById("kurvListe");
+            liste.innerHTML = "";
+            for (let produkt of handlekurv) {
+                liste.innerHTML += `
+                <p>
+                ${produkt.navn}-${produkt.pris}kr
+                </p>
+                `;
+            }
+        }
+        visHandlekurv()
+        const kurvPopup = document.getElementById("kurvPopup");
+const kurvKnapp = document.getElementById("kurvKnapp");
+const lukkKurv = document.getElementById("lukkKurv");
+kurvKnapp.addEventListener("click", () => {
+
+    visHandlekurv();
+
+    kurvPopup.style.display = "flex";
+
+});
+lukkKurv.addEventListener("click", () => {
+
+    kurvPopup.style.display = "none";
+
+});
+
+        console.log(handlekurv)
         console.log("Produkt-id:", id)
         console.log(valgtProdukt.navn)
     })
 
 
 })
+
+
 
 

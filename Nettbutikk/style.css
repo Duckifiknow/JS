@@ -125,3 +125,25 @@ h1 {
     background-color: blueviolet;
     border-color: #000000;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    
+    justify-content: right;
+    align-items:start;
+}
+
+.kurvInnhold{
+    background-color: #22053b;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #000000;
+    padding: 25px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+
+}
+
