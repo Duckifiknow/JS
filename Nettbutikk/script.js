@@ -31,7 +31,7 @@ knapper.forEach(knapp => {
 
 
         oppdaterAntall()
-        
+
         function visHandlekurv() {
             const liste = document.getElementById("kurvListe");
             liste.innerHTML = "";
@@ -45,20 +45,19 @@ knapper.forEach(knapp => {
         }
         visHandlekurv()
         const kurvPopup = document.getElementById("kurvPopup");
-const kurvKnapp = document.getElementById("kurvKnapp");
-const lukkKurv = document.getElementById("lukkKurv");
-kurvKnapp.addEventListener("click", () => {
+        const kurvKnapp = document.getElementById("kurvKnapp");
+        const lukkKurv = document.getElementById("lukkKurv");
+        kurvKnapp.addEventListener("click", () => {
 
-    visHandlekurv();
+             
+            kurvPopup.style.display = "flex";
 
-    kurvPopup.style.display = "flex";
+        });
+        lukkKurv.addEventListener("click", () => {
 
-});
-lukkKurv.addEventListener("click", () => {
+            kurvPopup.style.display = "none";
 
-    kurvPopup.style.display = "none";
-
-});
+        });
 
         console.log(handlekurv)
         console.log("Produkt-id:", id)
